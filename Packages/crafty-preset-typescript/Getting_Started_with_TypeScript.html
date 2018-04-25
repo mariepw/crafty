@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <title>Getting Started with TypeScript - Crafty</title>
+    <meta name="description" content="The task runner that binds them all">
+    <meta name="author" content="Swissquote Bank SA">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="icon" href="../../themes/swissquote/img/favicon.png" type="image/x-icon">
+
+    <!-- Mobile -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    
+    <!-- CSS -->
+    <link href='../../themes/swissquote/css/theme.min.css' rel='stylesheet' type='text/css'><link href='../../themes/swissquote/css/prismjs.css' rel='stylesheet' type='text/css'>
+            <!-- Tipue Search -->
+        <link href="../../tipuesearch/tipuesearch.css" rel="stylesheet">
+    
+    <!--[if lt IE 9]>
+    <script src="../../themes/daux/js/html5shiv-3.7.3.min.js"></script>
+    <![endif]-->
+</head>
+<body class=" ">
+    <div class="Columns content">
+    <aside class="Columns__left Collapsible">
+        <button type="button" class="Button Collapsible__trigger">
+            <span class="Collapsible__trigger__bar"></span>
+            <span class="Collapsible__trigger__bar"></span>
+            <span class="Collapsible__trigger__bar"></span>
+        </button>
+
+        <a class="Brand" href="../../index.html">Crafty</a>
+
+    <div class="Search">
+        <svg class="Search__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 451 451">
+            <path d="M447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1C384.65 86.2 298.35 0 192.35 0 86.25 0 .05 86.3.05 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2L428.05 447c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zM26.95 192.3c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z"/>
+        </svg>
+        <input type="search" id="tipue_search_input" class="Search__field" placeholder="Search..." autocomplete="on"
+               results=25 autosave=text_search>
+    </div>
+
+        <div class="Collapsible__content">
+            <!-- Navigation -->
+            <ul class='Nav'><li class='Nav__item '><a href="../../Getting_Started.html">Getting Started</a></li><li class='Nav__item  has-children'><a href="../../Use_Cases/index.html" class="folder"><i class="Nav__arrow">&nbsp;</i>Use Cases</a><ul class='Nav'><li class='Nav__item '><a href="../../Use_Cases/Compiling_CSS.html">Compiling CSS</a></li><li class='Nav__item '><a href="../../Use_Cases/Compiling_JavaScript.html">Compiling JavaScript</a></li><li class='Nav__item '><a href="../../Use_Cases/Compiling_TypeScript.html">Compiling TypeScript</a></li><li class='Nav__item '><a href="../../Use_Cases/Compressing_Images.html">Compressing Images</a></li><li class='Nav__item '><a href="../../Use_Cases/Testing_your_code.html">Testing your code</a></li></ul></li><li class='Nav__item  has-children'><a href="../../User_Guides/index.html" class="folder"><i class="Nav__arrow">&nbsp;</i>User Guides</a><ul class='Nav'><li class='Nav__item '><a href="../../User_Guides/Configuring_the_build_in_a_blank_project.html">Configuring the build in a blank project</a></li><li class='Nav__item '><a href="../../User_Guides/Configuring_the_build_in_a_maven_project.html">Configuring the build in a maven project</a></li><li class='Nav__item '><a href="../../User_Guides/Create_a_configuration_file.html">Create a configuration file</a></li><li class='Nav__item '><a href="../../User_Guides/crafty.config.js_Available_Options.html">crafty.config.js Available Options</a></li><li class='Nav__item '><a href="../../User_Guides/Developing_Faster_with_Crafty_watch.html">Developing Faster with Crafty watch</a></li></ul></li><li class='Nav__item Nav__item--open has-children'><a href="../../Packages/index.html" class="folder"><i class="Nav__arrow">&nbsp;</i>Packages</a><ul class='Nav'><li class='Nav__item  has-children'><a href="../../Packages/crafty/index.html" class="folder"><i class="Nav__arrow">&nbsp;</i>crafty</a><ul class='Nav'><li class='Nav__item '><a href="../../Packages/crafty/Anatomy_of_a_preset.html">Anatomy of a preset</a></li><li class='Nav__item '><a href="../../Packages/crafty/The_Crafty_instance.html">The Crafty instance</a></li></ul></li><li class='Nav__item '><a href="../../Packages/crafty-runner-gulp.html">crafty-runner-gulp</a></li><li class='Nav__item '><a href="../../Packages/crafty-runner-rollup.html">crafty-runner-rollup</a></li><li class='Nav__item '><a href="../../Packages/crafty-runner-webpack.html">crafty-runner-webpack</a></li><li class='Nav__item  has-children'><a href="../../Packages/crafty-preset-babel/index.html" class="folder"><i class="Nav__arrow">&nbsp;</i>crafty-preset-babel</a><ul class='Nav'><li class='Nav__item '><a href="../../Packages/crafty-preset-babel/ESLint_IDE_Integration.html">ESLint IDE Integration</a></li><li class='Nav__item '><a href="../../Packages/crafty-preset-babel/JavaScript_Features.html">JavaScript Features</a></li><li class='Nav__item '><a href="../../Packages/crafty-preset-babel/JavaScript_Linting.html">JavaScript Linting</a></li></ul></li><li class='Nav__item '><a href="../../Packages/crafty-preset-images.html">crafty-preset-images</a></li><li class='Nav__item '><a href="../../Packages/crafty-preset-images-simple.html">crafty-preset-images-simple</a></li><li class='Nav__item '><a href="../../Packages/crafty-preset-jest.html">crafty-preset-jest</a></li><li class='Nav__item '><a href="../../Packages/crafty-preset-maven.html">crafty-preset-maven</a></li><li class='Nav__item '><a href="../../Packages/crafty-preset-polyfills.html">crafty-preset-polyfills</a></li><li class='Nav__item  has-children'><a href="../../Packages/crafty-preset-postcss/index.html" class="folder"><i class="Nav__arrow">&nbsp;</i>crafty-preset-postcss</a><ul class='Nav'><li class='Nav__item '><a href="../../Packages/crafty-preset-postcss/CSS_Features.html">CSS Features</a></li><li class='Nav__item '><a href="../../Packages/crafty-preset-postcss/CSS_Linting.html">CSS Linting</a></li></ul></li><li class='Nav__item '><a href="../../Packages/crafty-preset-react.html">crafty-preset-react</a></li><li class='Nav__item Nav__item--open has-children'><a href="../../Packages/crafty-preset-typescript/index.html" class="folder"><i class="Nav__arrow">&nbsp;</i>crafty-preset-typescript</a><ul class='Nav'><li class='Nav__item Nav__item--active'><a href="../../Packages/crafty-preset-typescript/Getting_Started_with_TypeScript.html">Getting Started with TypeScript</a></li><li class='Nav__item '><a href="../../Packages/crafty-preset-typescript/TypeScript_Features.html">TypeScript Features</a></li><li class='Nav__item '><a href="../../Packages/crafty-preset-typescript/TypeScript_Linting.html">TypeScript Linting</a></li><li class='Nav__item '><a href="../../Packages/crafty-preset-typescript/TypeScript_Typings.html">TypeScript Typings</a></li></ul></li><li class='Nav__item '><a href="../../Packages/babel-preset-swissquote.html">babel-preset-swissquote</a></li><li class='Nav__item '><a href="../../Packages/eslint-plugin-swissquote.html">eslint-plugin-swissquote</a></li><li class='Nav__item '><a href="../../Packages/postcss-swissquote-preset.html">postcss-swissquote-preset</a></li><li class='Nav__item '><a href="../../Packages/stylelint-config-swissquote.html">stylelint-config-swissquote</a></li></ul></li><li class='Nav__item '><a href="../../CLI.html">CLI</a></li><li class='Nav__item '><a href="../../Troubleshooting.html">Troubleshooting</a></li><li class='Nav__item '><a href="../../Why.html">Why</a></li></ul>
+
+            <div class="Links">
+                                    <hr/>
+                                            <a href="https://medium.com/swissquote-engineering" target="_blank">Technical blog</a>
+                        <br />
+                                            <a href="https://swissquote.com/" target="_blank">Swissquote</a>
+                        <br />
+                                            <a href="http://github.com/swissquote/crafty" target="_blank">GitHub</a>
+                        <br />
+                                                </div>
+
+                                <div class="CodeToggler">
+                        <hr/>
+                                                    <label class="Checkbox">Show Code Blocks                                <input type="checkbox" class="CodeToggler__button--main" checked="checked"/>
+                                <div class="Checkbox__indicator"></div>
+                            </label>
+                                            </div>
+                
+                
+                                    <div class="PoweredBy">
+                        <hr/>
+                        © 2018 Swissquote Bank SA. Powered by Daux.io.                    </div>
+                        </div>
+    </aside>
+    <div class="Columns__right Columns__right--full">
+        <div class="Columns__right__content">
+            <div class="doc_content">
+                <article class="Page">
+
+    <div class="Page__header">
+        <h1><a href="../../Packages/index.html">Packages</a> <svg class="Page__header--separator" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 477.175 477.175"><path d="M360.73 229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1 0s-5.3 13.8 0 19.1l215.5 215.5-215.5 215.5c-5.3 5.3-5.3 13.8 0 19.1 2.6 2.6 6.1 4 9.5 4 3.4 0 6.9-1.3 9.5-4l225.1-225.1c5.3-5.2 5.3-13.8.1-19z"/></svg> <a href="../../Packages/crafty-preset-typescript/index.html">crafty-preset-typescript</a> <svg class="Page__header--separator" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 477.175 477.175"><path d="M360.73 229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1 0s-5.3 13.8 0 19.1l215.5 215.5-215.5 215.5c-5.3 5.3-5.3 13.8 0 19.1 2.6 2.6 6.1 4 9.5 4 3.4 0 6.9-1.3 9.5-4l225.1-225.1c5.3-5.2 5.3-13.8.1-19z"/></svg> <a href="../../Packages/crafty-preset-typescript/Getting_Started_with_TypeScript.html">Getting Started with TypeScript</a></h1>
+                    </div>
+
+    <div class="s-content">
+        <p>Like for an EcmaScript 2015 bundle, you must set <code>webpack: true</code> in your <code>crafty.config.js</code> for your bundle.</p>
+<h2 id="page_Prerequisite">Prerequisite</h2>
+<p>To make the compilation work with TypeScript, you need to add a <code>tsconfig.json</code> file at the root of your project with the following content.</p>
+<pre><code class="language-json">{
+  &quot;exclude&quot;: [&quot;node_modules&quot;, &quot;node&quot;],
+  &quot;compilerOptions&quot;: {
+    &quot;moduleResolution&quot;: &quot;node&quot;,
+    &quot;charset&quot;: &quot;UTF-8&quot;,
+    &quot;jsx&quot;: &quot;react&quot;,
+    &quot;module&quot;: &quot;esnext&quot;, // Enables Tree shaking for Webpack and rollup.js
+    &quot;sourceMap&quot;: true,
+    &quot;target&quot;: &quot;es5&quot;,
+    &quot;lib&quot;: [&quot;DOM&quot;, &quot;ES2017&quot;, &quot;DOM.Iterable&quot;, &quot;ScriptHost&quot;] // Makes it easier to write ES6, be careful to include mixins accordingly.
+  }
+}
+</code></pre>
+<p><a href="https://www.typescriptlang.org/docs/handbook/tsconfig-json.html" class="Link--external">All configuration options</a>.</p>
+<h3 id="page_If-you-plan-to-create-a-library">If you plan to create a library</h3>
+<p>You can ask TypeScript to also export all Type definitions along with the code, this is how you do it:</p>
+<pre><code class="language-json">{
+  &quot;compilerOptions&quot;: {
+    &quot;declaration&quot;: true
+  }
+}
+</code></pre>
+<h2 id="page_Most-basic-example">Most basic example</h2>
+<p>Create a bundle like this:</p>
+<pre><code class="language-javascript">{
+    yourBundleName: {
+        webpack: true,
+        source: &quot;js/main.ts&quot;
+    }
+}
+</code></pre>
+<p>Then create a <code>js/main.ts</code> file with the following content</p>
+<pre><code class="language-typescript">interface Person {
+  firstName: string;
+  lastName: string;
+}
+
+function greeter(person: Person) {
+  return &quot;Hello, &quot; + person.firstName + &quot; &quot; + person.lastName;
+}
+
+var user = { firstName: &quot;Jane&quot;, lastName: &quot;User&quot; };
+
+console.log(greeter(user));
+</code></pre>
+<p>When running Gulp, you will get your compiled TypeScript file in <code>js/yourBundleName.min.js</code></p>
+<p><a href="TypeScript_Features.html">More features</a></p>
+<h2 id="page_Using-Typings">Using Typings</h2>
+<p>To leverage external libraries in your project, you need to configure TypeScript to be able to read your definition files.</p>
+<p>If you use Typings from the <code>@types</code> scoped packages you don't need this configuration.</p>
+<p>But for the definitions downloaded with <code>typings</code> or your own, you need to tell TypeScript to load them.</p>
+<p>for this, you need to create a <code>tsconfig.json</code> next to your <code>crafty.config.js</code> and add a <code>&quot;files&quot;</code> array inside.</p>
+<pre><code class="language-json">{
+  &quot;files&quot;: [&quot;./typings/index.d.ts&quot;]
+}
+</code></pre>
+<p><a href="TypeScript_Typings.html">Read more about Typings</a></p>
+    </div>
+
+        <nav>
+        <ul class="Pager">
+            <li class=Pager--prev><a href="../../Packages/crafty-preset-typescript/index.html">Previous</a></li>            <li class=Pager--next><a href="../../Packages/crafty-preset-typescript/TypeScript_Features.html">Next</a></li>        </ul>
+    </nav>
+    </article>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-113355094-2', '');
+    ga('send', 'pageview');
+</script>
+
+    <!-- JS -->
+    <script src="../../themes/swissquote/js/jquery-1.11.3.min.js"></script><script src="../../themes/swissquote/js/prismjs.min.js"></script><script src="../../themes/swissquote/js/daux.js"></script>
+            <!-- Tipue Search -->
+        <script type="text/javascript" src="../../tipuesearch/tipuesearch.js"></script>
+
+        <script>
+            window.onunload = function(){}; // force $(document).ready to be called on back/forward navigation in firefox
+            $(function() {
+                tipuesearch({
+                    'base_url': '../../'
+                });
+            });
+        </script>
+    
+</body>
+</html>

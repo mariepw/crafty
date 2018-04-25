@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <title>CSS Features - Crafty</title>
+    <meta name="description" content="The task runner that binds them all">
+    <meta name="author" content="Swissquote Bank SA">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="icon" href="../../themes/swissquote/img/favicon.png" type="image/x-icon">
+
+    <!-- Mobile -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    
+    <!-- CSS -->
+    <link href='../../themes/swissquote/css/theme.min.css' rel='stylesheet' type='text/css'><link href='../../themes/swissquote/css/prismjs.css' rel='stylesheet' type='text/css'>
+            <!-- Tipue Search -->
+        <link href="../../tipuesearch/tipuesearch.css" rel="stylesheet">
+    
+    <!--[if lt IE 9]>
+    <script src="../../themes/daux/js/html5shiv-3.7.3.min.js"></script>
+    <![endif]-->
+</head>
+<body class=" ">
+    <div class="Columns content">
+    <aside class="Columns__left Collapsible">
+        <button type="button" class="Button Collapsible__trigger">
+            <span class="Collapsible__trigger__bar"></span>
+            <span class="Collapsible__trigger__bar"></span>
+            <span class="Collapsible__trigger__bar"></span>
+        </button>
+
+        <a class="Brand" href="../../index.html">Crafty</a>
+
+    <div class="Search">
+        <svg class="Search__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 451 451">
+            <path d="M447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1C384.65 86.2 298.35 0 192.35 0 86.25 0 .05 86.3.05 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2L428.05 447c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zM26.95 192.3c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z"/>
+        </svg>
+        <input type="search" id="tipue_search_input" class="Search__field" placeholder="Search..." autocomplete="on"
+               results=25 autosave=text_search>
+    </div>
+
+        <div class="Collapsible__content">
+            <!-- Navigation -->
+            <ul class='Nav'><li class='Nav__item '><a href="../../Getting_Started.html">Getting Started</a></li><li class='Nav__item  has-children'><a href="../../Use_Cases/index.html" class="folder"><i class="Nav__arrow">&nbsp;</i>Use Cases</a><ul class='Nav'><li class='Nav__item '><a href="../../Use_Cases/Compiling_CSS.html">Compiling CSS</a></li><li class='Nav__item '><a href="../../Use_Cases/Compiling_JavaScript.html">Compiling JavaScript</a></li><li class='Nav__item '><a href="../../Use_Cases/Compiling_TypeScript.html">Compiling TypeScript</a></li><li class='Nav__item '><a href="../../Use_Cases/Compressing_Images.html">Compressing Images</a></li><li class='Nav__item '><a href="../../Use_Cases/Testing_your_code.html">Testing your code</a></li></ul></li><li class='Nav__item  has-children'><a href="../../User_Guides/index.html" class="folder"><i class="Nav__arrow">&nbsp;</i>User Guides</a><ul class='Nav'><li class='Nav__item '><a href="../../User_Guides/Configuring_the_build_in_a_blank_project.html">Configuring the build in a blank project</a></li><li class='Nav__item '><a href="../../User_Guides/Configuring_the_build_in_a_maven_project.html">Configuring the build in a maven project</a></li><li class='Nav__item '><a href="../../User_Guides/Create_a_configuration_file.html">Create a configuration file</a></li><li class='Nav__item '><a href="../../User_Guides/crafty.config.js_Available_Options.html">crafty.config.js Available Options</a></li><li class='Nav__item '><a href="../../User_Guides/Developing_Faster_with_Crafty_watch.html">Developing Faster with Crafty watch</a></li></ul></li><li class='Nav__item Nav__item--open has-children'><a href="../../Packages/index.html" class="folder"><i class="Nav__arrow">&nbsp;</i>Packages</a><ul class='Nav'><li class='Nav__item  has-children'><a href="../../Packages/crafty/index.html" class="folder"><i class="Nav__arrow">&nbsp;</i>crafty</a><ul class='Nav'><li class='Nav__item '><a href="../../Packages/crafty/Anatomy_of_a_preset.html">Anatomy of a preset</a></li><li class='Nav__item '><a href="../../Packages/crafty/The_Crafty_instance.html">The Crafty instance</a></li></ul></li><li class='Nav__item '><a href="../../Packages/crafty-runner-gulp.html">crafty-runner-gulp</a></li><li class='Nav__item '><a href="../../Packages/crafty-runner-rollup.html">crafty-runner-rollup</a></li><li class='Nav__item '><a href="../../Packages/crafty-runner-webpack.html">crafty-runner-webpack</a></li><li class='Nav__item  has-children'><a href="../../Packages/crafty-preset-babel/index.html" class="folder"><i class="Nav__arrow">&nbsp;</i>crafty-preset-babel</a><ul class='Nav'><li class='Nav__item '><a href="../../Packages/crafty-preset-babel/ESLint_IDE_Integration.html">ESLint IDE Integration</a></li><li class='Nav__item '><a href="../../Packages/crafty-preset-babel/JavaScript_Features.html">JavaScript Features</a></li><li class='Nav__item '><a href="../../Packages/crafty-preset-babel/JavaScript_Linting.html">JavaScript Linting</a></li></ul></li><li class='Nav__item '><a href="../../Packages/crafty-preset-images.html">crafty-preset-images</a></li><li class='Nav__item '><a href="../../Packages/crafty-preset-images-simple.html">crafty-preset-images-simple</a></li><li class='Nav__item '><a href="../../Packages/crafty-preset-jest.html">crafty-preset-jest</a></li><li class='Nav__item '><a href="../../Packages/crafty-preset-maven.html">crafty-preset-maven</a></li><li class='Nav__item '><a href="../../Packages/crafty-preset-polyfills.html">crafty-preset-polyfills</a></li><li class='Nav__item Nav__item--open has-children'><a href="../../Packages/crafty-preset-postcss/index.html" class="folder"><i class="Nav__arrow">&nbsp;</i>crafty-preset-postcss</a><ul class='Nav'><li class='Nav__item Nav__item--active'><a href="../../Packages/crafty-preset-postcss/CSS_Features.html">CSS Features</a></li><li class='Nav__item '><a href="../../Packages/crafty-preset-postcss/CSS_Linting.html">CSS Linting</a></li></ul></li><li class='Nav__item '><a href="../../Packages/crafty-preset-react.html">crafty-preset-react</a></li><li class='Nav__item  has-children'><a href="../../Packages/crafty-preset-typescript/index.html" class="folder"><i class="Nav__arrow">&nbsp;</i>crafty-preset-typescript</a><ul class='Nav'><li class='Nav__item '><a href="../../Packages/crafty-preset-typescript/Getting_Started_with_TypeScript.html">Getting Started with TypeScript</a></li><li class='Nav__item '><a href="../../Packages/crafty-preset-typescript/TypeScript_Features.html">TypeScript Features</a></li><li class='Nav__item '><a href="../../Packages/crafty-preset-typescript/TypeScript_Linting.html">TypeScript Linting</a></li><li class='Nav__item '><a href="../../Packages/crafty-preset-typescript/TypeScript_Typings.html">TypeScript Typings</a></li></ul></li><li class='Nav__item '><a href="../../Packages/babel-preset-swissquote.html">babel-preset-swissquote</a></li><li class='Nav__item '><a href="../../Packages/eslint-plugin-swissquote.html">eslint-plugin-swissquote</a></li><li class='Nav__item '><a href="../../Packages/postcss-swissquote-preset.html">postcss-swissquote-preset</a></li><li class='Nav__item '><a href="../../Packages/stylelint-config-swissquote.html">stylelint-config-swissquote</a></li></ul></li><li class='Nav__item '><a href="../../CLI.html">CLI</a></li><li class='Nav__item '><a href="../../Troubleshooting.html">Troubleshooting</a></li><li class='Nav__item '><a href="../../Why.html">Why</a></li></ul>
+
+            <div class="Links">
+                                    <hr/>
+                                            <a href="https://medium.com/swissquote-engineering" target="_blank">Technical blog</a>
+                        <br />
+                                            <a href="https://swissquote.com/" target="_blank">Swissquote</a>
+                        <br />
+                                            <a href="http://github.com/swissquote/crafty" target="_blank">GitHub</a>
+                        <br />
+                                                </div>
+
+                                <div class="CodeToggler">
+                        <hr/>
+                                                    <label class="Checkbox">Show Code Blocks                                <input type="checkbox" class="CodeToggler__button--main" checked="checked"/>
+                                <div class="Checkbox__indicator"></div>
+                            </label>
+                                            </div>
+                
+                
+                                    <div class="PoweredBy">
+                        <hr/>
+                        © 2018 Swissquote Bank SA. Powered by Daux.io.                    </div>
+                        </div>
+    </aside>
+    <div class="Columns__right Columns__right--full">
+        <div class="Columns__right__content">
+            <div class="doc_content">
+                <article class="Page">
+
+    <div class="Page__header">
+        <h1><a href="../../Packages/index.html">Packages</a> <svg class="Page__header--separator" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 477.175 477.175"><path d="M360.73 229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1 0s-5.3 13.8 0 19.1l215.5 215.5-215.5 215.5c-5.3 5.3-5.3 13.8 0 19.1 2.6 2.6 6.1 4 9.5 4 3.4 0 6.9-1.3 9.5-4l225.1-225.1c5.3-5.2 5.3-13.8.1-19z"/></svg> <a href="../../Packages/crafty-preset-postcss/index.html">crafty-preset-postcss</a> <svg class="Page__header--separator" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 477.175 477.175"><path d="M360.73 229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1 0s-5.3 13.8 0 19.1l215.5 215.5-215.5 215.5c-5.3 5.3-5.3 13.8 0 19.1 2.6 2.6 6.1 4 9.5 4 3.4 0 6.9-1.3 9.5-4l225.1-225.1c5.3-5.2 5.3-13.8.1-19z"/></svg> <a href="../../Packages/crafty-preset-postcss/CSS_Features.html">CSS Features</a></h1>
+                    </div>
+
+    <div class="s-content">
+        <p><strong>PostCSS</strong> is a CSS Parser that can be extended with plugins.
+We made a selection of plugins useful for Swissquote.
+Here are some features made possible by them.</p>
+<div class="TableOfContentsContainer">
+    <h4 class="TableOfContentsContainer__title">Table of Contents</h4>
+    <div class="TableOfContentsContainer__content">
+        <ul class="TableOfContents">
+<li>
+<p><a href="#page_All-plugins">All plugins</a></p>
+</li>
+<li>
+<p><a href="#page_Organization">Organization</a></p>
+<ul class="TableOfContents">
+<li>
+<p><a href="#page_Nested-Styles">Nested Styles (<code>postcss-nesting</code>, <code>postcss-nested</code>, <code>postcss-atroot</code>)</a></p>
+</li>
+<li>
+<p><a href="#page_Import-CSS-Files">Import CSS Files (<code>postcss-import</code>, <code>postcss-url</code>)</a></p>
+</li>
+<li>
+<p><a href="#page_Mixins">Mixins (<code>sassy-mixins</code>)</a></p>
+</li>
+<li>
+<p><a href="#page_Comments">Comments (<code>postcss-scss</code>)</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="#page_Variables">Variables</a></p>
+<ul class="TableOfContents">
+<li>
+<p><a href="#page_Variables-2">Variables (<code>postcss-advanced-variables</code>, <code>postcss-custom-properties</code>)</a></p>
+</li>
+<li>
+<p><a href="#page_Property-Lookup">Property Lookup (<code>postcss-property-lookup</code>)</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="#page_Images">Images</a></p>
+<ul class="TableOfContents">
+<li>
+<p><a href="#page_Images-in-CSS">Images in CSS (<code>postcss-assets</code>)</a></p>
+</li>
+<li>
+<p><a href="#page_Image-set">Image set (<code>postcss-image-set-polyfill</code>)</a></p>
+</li>
+<li>
+<p><a href="#page_Help-with-Right-to-left-languages">Help with Right-to-left languages (<code>postcss-logical</code>, <code>postcss-dir-pseudo-class</code>)</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="#page_Dynamic-Styles">Dynamic Styles</a></p>
+<ul class="TableOfContents">
+<li>
+<p><a href="#page_Math-in-your-CSS">Math in your CSS (<code>postcss-calc</code>)</a></p>
+</li>
+<li>
+<p><a href="#page_Conditionals">Conditionals (<code>postcss-advanced-variables</code>)</a></p>
+</li>
+<li>
+<p><a href="#page_Loops">Loops (<code>postcss-advanced-variables</code>)</a></p>
+</li>
+<li>
+<p><a href="#page_Initial-Values">Initial Values (<code>postcss-initial</code>)</a></p>
+</li>
+<li>
+<p><a href="#page_Colors">Colors (<code>postcss-color-function</code>, <code>postcss-color-gray</code>, <code>postcss-color-hex-alpha</code>, <code>postcss-color-hwb</code>, <code>postcss-color-rebeccapurple</code>, <code>postcss-color-rgb</code>, <code>postcss-color-rgba-fallback</code>, <code>postcss-color-hsl</code>)</a></p>
+<ul class="TableOfContents">
+<li>
+<p><a href="#page_Color-Fallbacks">Color Fallbacks</a></p>
+</li>
+<li>
+<p><a href="#page_Color-manipulation">Color manipulation</a></p>
+</li>
+<li>
+<p><a href="#page_Levels-of-gray">Levels of gray</a></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="#page_Syntax-simplification">Syntax simplification</a></p>
+<ul class="TableOfContents">
+<li>
+<p><a href="#page_Selectors">Selectors (<code>postcss-selector-matches</code>, <code>postcss-selector-not</code>, <code>postcss-pseudo-class-any-link</code>, <code>postcss-custom-selectors</code>)</a></p>
+</li>
+<li>
+<p><a href="#page_Media-Queries">Media Queries (<code>postcss-custom-media</code>, <code>postcss-media-minmax</code>)</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="#page_Fallbacks">Fallbacks</a></p>
+<ul class="TableOfContents">
+<li>
+<p><a href="#page_Vendor-Prefixes">Vendor Prefixes (<code>autoprefixer</code>)</a></p>
+</li>
+<li>
+<p><a href="#page_Browser-support">Browser support (<code>postcss-font-family-system-ui</code>, <code>postcss-pseudoelements</code>, <code>postcss-replace-overflow-wrap</code>, <code>postcss-filter-gradient</code>, <code>postcss-font-variant</code>)</a></p>
+</li>
+</ul>
+</li>
+</ul>    </div>
+</div>
+<h2 id="page_All-plugins">All plugins</h2>
+<p>All included plugins have a short example accompanying them below.</p>
+<table>
+<thead>
+<tr>
+<th>Plugin</th>
+<th>Meta-plugin</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>postcss-assets</code></td>
+<td></td>
+<td>Embed images &amp; size functions</td>
+</tr>
+<tr>
+<td><code>postcss-filter-gradient</code></td>
+<td></td>
+<td>Gradient fallback for IE9</td>
+</tr>
+<tr>
+<td><code>postcss-import</code></td>
+<td></td>
+<td>Import files</td>
+</tr>
+<tr>
+<td><code>postcss-scss</code></td>
+<td></td>
+<td>Inline comments support</td>
+</tr>
+<tr>
+<td><code>postcss-url</code></td>
+<td></td>
+<td>Update relative URLs after import</td>
+</tr>
+<tr>
+<td><code>postcss-advanced-variables</code></td>
+<td></td>
+<td>Sass-like variables, mixins and loops</td>
+</tr>
+<tr>
+<td><code>postcss-nested</code></td>
+<td></td>
+<td>Sass-like nested selectors</td>
+</tr>
+<tr>
+<td><code>postcss-atroot</code></td>
+<td></td>
+<td>place rules back up to the root</td>
+</tr>
+<tr>
+<td><code>postcss-property-lookup</code></td>
+<td></td>
+<td>reference other property values</td>
+</tr>
+<tr>
+<td><code>postcss-dir-pseudo-class</code></td>
+<td></td>
+<td>Use the <code>:dir()</code> pseudo class for LTR/RTL</td>
+</tr>
+<tr>
+<td><code>postcss-logical</code></td>
+<td></td>
+<td>New LTR/RTL and flow related properties</td>
+</tr>
+<tr>
+<td><code>autoprefixer</code></td>
+<td></td>
+<td>Add or remove Vendor prefixes</td>
+</tr>
+<tr>
+<td><code>postcss-csso</code></td>
+<td></td>
+<td>Minify CSS</td>
+</tr>
+<tr>
+<td><code>postcss-attribute-case-insensitive</code></td>
+<td><code>postcss-cssnext</code></td>
+<td>Support case insensitive attributes</td>
+</tr>
+<tr>
+<td><code>postcss-calc</code></td>
+<td><code>postcss-cssnext</code></td>
+<td>Resolves calculations</td>
+</tr>
+<tr>
+<td><code>postcss-color-function</code></td>
+<td><code>postcss-cssnext</code></td>
+<td>W3C color methods</td>
+</tr>
+<tr>
+<td><code>postcss-color-gray</code></td>
+<td><code>postcss-cssnext</code></td>
+<td>Shades of gray</td>
+</tr>
+<tr>
+<td><code>postcss-color-hex-alpha</code></td>
+<td><code>postcss-cssnext</code></td>
+<td><code>#rrggbbaa</code> colors</td>
+</tr>
+<tr>
+<td><code>postcss-color-hsl</code></td>
+<td><code>postcss-cssnext</code></td>
+<td>Allow to define colors using <code>hsl()</code></td>
+</tr>
+<tr>
+<td><code>postcss-color-hwb</code></td>
+<td><code>postcss-cssnext</code></td>
+<td><code>hwb()</code> color function</td>
+</tr>
+<tr>
+<td><code>postcss-color-rebeccapurple</code></td>
+<td><code>postcss-cssnext</code></td>
+<td>Adds the <code>rebbeccapurple</code> color</td>
+</tr>
+<tr>
+<td><code>postcss-color-rgb</code></td>
+<td><code>postcss-cssnext</code></td>
+<td>Change W3C Color Level 4 <code>rgb()</code> to Level 3</td>
+</tr>
+<tr>
+<td><code>postcss-color-rgba-fallback</code></td>
+<td><code>postcss-cssnext</code></td>
+<td>Add an RGB fallback to RGBA colors</td>
+</tr>
+<tr>
+<td><code>postcss-custom-media</code></td>
+<td><code>postcss-cssnext</code></td>
+<td>W3C custom media queries</td>
+</tr>
+<tr>
+<td><code>postcss-custom-properties</code></td>
+<td><code>postcss-cssnext</code></td>
+<td>W3C custom variables</td>
+</tr>
+<tr>
+<td><code>postcss-custom-selectors</code></td>
+<td><code>postcss-cssnext</code></td>
+<td>W3C custom selectors</td>
+</tr>
+<tr>
+<td><code>postcss-font-family-system-ui</code></td>
+<td><code>postcss-cssnext</code></td>
+<td>Change <code>system-ui</code> to a font-family list</td>
+</tr>
+<tr>
+<td><code>postcss-font-variant</code></td>
+<td><code>postcss-cssnext</code></td>
+<td>Transformed to <code>font-feature-settings</code></td>
+</tr>
+<tr>
+<td><code>postcss-image-set-polyfill</code></td>
+<td><code>postcss-cssnext</code></td>
+<td>Use <code>image-set()</code> for image selection</td>
+</tr>
+<tr>
+<td><code>postcss-initial</code></td>
+<td><code>postcss-cssnext</code></td>
+<td>Use initial value for a property</td>
+</tr>
+<tr>
+<td><code>postcss-media-minmax</code></td>
+<td><code>postcss-cssnext</code></td>
+<td>W3C &lt; &lt;= &gt;= &gt; media queries</td>
+</tr>
+<tr>
+<td><code>postcss-nesting</code></td>
+<td><code>postcss-cssnext</code></td>
+<td>W3C nested selectors</td>
+</tr>
+<tr>
+<td><code>postcss-pseudo-class-any-link</code></td>
+<td><code>postcss-cssnext</code></td>
+<td>Allows you to use :any-link pseudo class.</td>
+</tr>
+<tr>
+<td><code>postcss-pseudoelements</code></td>
+<td><code>postcss-cssnext</code></td>
+<td>Adjust <code>::</code> to <code>:</code></td>
+</tr>
+<tr>
+<td><code>postcss-replace-overflow-wrap</code></td>
+<td><code>postcss-cssnext</code></td>
+<td>Converts <code>overflow-wrap</code> to <code>word-wrap</code></td>
+</tr>
+<tr>
+<td><code>postcss-selector-matches</code></td>
+<td><code>postcss-cssnext</code></td>
+<td>W3C <code>:matches()</code> pseudo-classes</td>
+</tr>
+<tr>
+<td><code>postcss-selector-not</code></td>
+<td><code>postcss-cssnext</code></td>
+<td>W3C <code>:not()</code> pseudo-classes</td>
+</tr>
+</tbody>
+</table>
+<h2 id="page_Organization">Organization</h2>
+<h3 id="page_Nested-Styles">Nested Styles (<code>postcss-nesting</code>, <code>postcss-nested</code>, <code>postcss-atroot</code>)</h3>
+<pre><code class="language-css">/* Before */
+
+.parent {
+  background: white;
+
+  .before {
+    color: #333;
+  }
+
+  @at-root {
+    .child {
+      background: black;
+    }
+  }
+
+  .after {
+    color: #eee;
+  }
+}
+
+/* After */
+
+.child {
+  background: black;
+}
+
+.parent {
+  background: white;
+}
+
+.parent .before {
+  color: #333;
+}
+
+.parent .after {
+  color: #eee;
+}
+</code></pre>
+<h3 id="page_Import-CSS-Files">Import CSS Files (<code>postcss-import</code>, <code>postcss-url</code>)</h3>
+<p>With <code>@import</code>, you can import your CSS files to create a single CSS output file.
+All relative links are updated when they are imported.</p>
+<pre><code class="language-css">/* Before */
+
+/** foo.scss **/
+
+body {
+  background: #eee;
+}
+
+/** media/bar.scss **/
+
+.button {
+  background: url(&quot;../../images/buttons/background.png&quot;);
+}
+
+/** style.scss **/
+
+@import &quot;foo.scss&quot;;
+@import &quot;media/bar.scss&quot; (min-width: 25em);
+
+/* After */
+
+body {
+  background: #eee;
+}
+
+@media (min-width: 25em) {
+  .button {
+    background: url(&quot;../images/buttons/background.png&quot;); /* the path has been rebased */
+  }
+}
+</code></pre>
+<h3 id="page_Mixins">Mixins (<code>sassy-mixins</code>)</h3>
+<p><code>@mixin</code> allows to create Sass style mixins.</p>
+<pre><code class="language-css">/* Before */
+
+@mixin icon($name) {
+  padding-left: 16px;
+
+  &amp;::after {
+    content: &quot;&quot;;
+    background: url(/icons/$(name).png);
+  }
+}
+
+.search {
+  @include icon(search);
+}
+
+/* After */
+
+.search {
+  padding-left: 16px;
+}
+
+.search::after {
+  content: &quot;&quot;;
+  background: url(/icons/search.png);
+}
+</code></pre>
+<h3 id="page_Comments">Comments (<code>postcss-scss</code>)</h3>
+<pre><code class="language-css">/* Before */
+
+// single line comment
+.button {
+  color: orange;
+}
+
+/* After */
+
+/* single line comment */
+.button {
+  color: orange;
+}
+</code></pre>
+<h2 id="page_Variables">Variables</h2>
+<h3 id="page_Variables-2">Variables (<code>postcss-advanced-variables</code>, <code>postcss-custom-properties</code>)</h3>
+<p>We have two possible ways of using variables:</p>
+<ol>
+<li>Sass style variables : <code>$variable</code>
+</li>
+<li>CSS properties (Official specification): <code>--variable</code>
+</li>
+</ol>
+<p>Sass style variables are provided as a compatibility layer.
+We recommend to use the CSS properties as they are future proof and will be directly supported in browsers in the future.</p>
+<pre><code class="language-css">/* Before */
+
+:root {
+  --color: #f00;
+}
+
+$blue: #056ef0;
+$column: 200px;
+
+.menu {
+  width: calc(4 * $column);
+}
+
+.menu_link {
+  color: var(--color);
+  background: $blue;
+  width: $column;
+}
+
+/* After */
+
+.menu {
+  width: calc(4 * 200px);
+}
+
+.menu_link {
+  color: #f00;
+  background: #056ef0;
+  width: 200px;
+}
+</code></pre>
+<h3 id="page_Property-Lookup">Property Lookup (<code>postcss-property-lookup</code>)</h3>
+<pre><code class="language-css">/* Before */
+
+.heading {
+  margin: 20px;
+  padding: @margin;
+}
+
+/* After */
+
+.heading {
+  margin: 20px;
+  padding: 20px;
+}
+</code></pre>
+<h2 id="page_Images">Images</h2>
+<h3 id="page_Images-in-CSS">Images in CSS (<code>postcss-assets</code>)</h3>
+<pre><code class="language-css">/* Before */
+
+body {
+  background: inline(
+    &quot;background.png&quot;
+  ); /* Be careful to not use this on big files */
+}
+
+.button {
+  background: resolve(&quot;foobar.jpg&quot;);
+  background: resolve(&quot;icons/baz.png&quot;);
+  width: width(&quot;foobar.png&quot;);
+  height: height(&quot;foobar.png&quot;);
+  background-size: size(&quot;foobar.png&quot;);
+}
+
+/* After */
+
+body {
+  background: url(data:image/gif;base64,...);
+}
+
+.button {
+  background: url(&quot;../images/foobar.jpg?14a931c501f&quot;);
+  background: url(&quot;../images/icons/baz.png?14a931c501f&quot;);
+  width: 320px;
+  height: 240px;
+  background-size: 320px 240px;
+}
+</code></pre>
+<h3 id="page_Image-set">Image set (<code>postcss-image-set-polyfill</code>)</h3>
+<pre><code class="language-css">/* Before */
+
+.BigImage {
+  background-image: image-set(
+    url(img/test.png) 1x,
+    url(img/test-2x.png) 2x,
+    url(my-img-print.png) 600dpi
+  );
+}
+
+/* After */
+
+.BigImage {
+  background-image: url(img/test.png);
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+  (-o-min-device-pixel-ratio: 2/1),
+  (min-resolution: 192dpi) {
+  .BigImage {
+    background-image: url(img/test-2x.png);
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 6.25),
+  (-o-min-device-pixel-ratio: 25/4),
+  (min-resolution: 600dpi) {
+  .BigImage {
+    background-image: url(my-img-print.png);
+  }
+}
+</code></pre>
+<h3 id="page_Help-with-Right-to-left-languages">Help with Right-to-left languages (<code>postcss-logical</code>, <code>postcss-dir-pseudo-class</code>)</h3>
+<pre><code class="language-css">/* Before */
+.Banner {
+  color: #222222;
+  inset: logical 0 5px 10px;
+  padding-inline: 20px 40px;
+  resize: block;
+}
+
+// `postcss-dir-psseudo-class`
+.Banner__title:dir(rtl) {
+  margin-right: 10px;
+}
+
+.Banner__title:dir(ltr) {
+  margin-left: 10px;
+}
+
+/* After */
+
+.Banner {
+  color: #222222;
+  top: 0;
+  left: 5px;
+  bottom: 10px;
+  right: 5px;
+}
+
+.Banner:dir(ltr) {
+  padding-left: 20px;
+  padding-right: 40px;
+}
+
+.Banner:dir(rtl) {
+  padding-right: 20px;
+  padding-left: 40px;
+}
+
+.Banner {
+  resize: vertical;
+}
+
+// `postcss-dir-psseudo-class`
+[dir=&quot;rtl&quot;] .Banner__title {
+  margin-right: 10px;
+}
+
+[dir=&quot;ltr&quot;] .Banner__title {
+  margin-left: 10px;
+}
+</code></pre>
+<h2 id="page_Dynamic-Styles">Dynamic Styles</h2>
+<h3 id="page_Math-in-your-CSS">Math in your CSS (<code>postcss-calc</code>)</h3>
+<pre><code class="language-css">/* Before */
+
+:root {
+  --main-font-size: 16px;
+}
+
+body {
+  font-size: var(--main-font-size);
+}
+
+h1 {
+  font-size: calc(var(--main-font-size) * 2);
+  height: calc(100px - 2em);
+  margin-bottom: calc(var(--main-font-size) * 1.5);
+}
+
+/* After */
+
+body {
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 32px;
+  height: calc(100px - 2em); // em's won't be resolved
+  margin-bottom: 24px;
+}
+</code></pre>
+<h3 id="page_Conditionals">Conditionals (<code>postcss-advanced-variables</code>)</h3>
+<pre><code class="language-css">/* Before */
+
+.notice--clear {
+  @if 3 &lt; 5 {
+    background: green;
+  } @else {
+    background: blue;
+  }
+}
+
+/* After */
+
+.notice--clear {
+  background: green;
+}
+</code></pre>
+<h3 id="page_Loops">Loops (<code>postcss-advanced-variables</code>)</h3>
+<pre><code class="language-css">/* Before */
+
+@each $icon in (foo, bar, baz) {
+  .icon-$(icon) {
+    background: url(&quot;icons/$(icon).png&quot;);
+  }
+}
+
+@for $i from 1 to 3 {
+  .b-$i {
+    width: $(i)px;
+  }
+}
+
+/* After */
+
+.icon-foo {
+  background: url(&quot;icons/foo.png&quot;);
+}
+
+.icon-bar {
+  background: url(&quot;icons/bar.png&quot;);
+}
+
+.icon-baz {
+  background: url(&quot;icons/baz.png&quot;);
+}
+
+.b-1 {
+  width: 1px;
+}
+.b-2 {
+  width: 2px;
+}
+.b-3 {
+  width: 3px;
+}
+</code></pre>
+<h3 id="page_Initial-Values">Initial Values (<code>postcss-initial</code>)</h3>
+<pre><code class="language-css">/* Before */
+
+a {
+  animation: initial;
+  background: initial;
+  white-space: initial;
+}
+
+/* After */
+
+a {
+  animation: none 0s ease 0s 1 normal none running;
+  animation: initial;
+  background: transparent none repeat 0 0/auto auto padding-box border-box
+    scroll;
+  background: initial;
+  white-space: normal;
+}
+</code></pre>
+<h3 id="page_Colors">Colors (<code>postcss-color-function</code>, <code>postcss-color-gray</code>, <code>postcss-color-hex-alpha</code>, <code>postcss-color-hwb</code>, <code>postcss-color-rebeccapurple</code>, <code>postcss-color-rgb</code>, <code>postcss-color-rgba-fallback</code>, <code>postcss-color-hsl</code>)</h3>
+<h4 id="page_Color-Fallbacks">Color Fallbacks</h4>
+<p>Some colors functions don't work in all browsers, these plugins will create fallbacks.</p>
+<p><code>rebeccapurple</code> is a whole different story, it's an homage to <a href="https://github.com/postcss/%60postcss-color-rebeccapurple%60#why-this-plugin-" class="Link--external">Eric Meyer's daughter</a>.</p>
+<pre><code class="language-css">/* Before */
+
+blockquote {
+  background: rgba(
+    153,
+    221,
+    153,
+    0.8
+  ); // This will create a fallback without the alpha
+
+  border-color: #9d9c; // This will be transformed to rgba
+
+  color: rebeccapurple; // ... sad story, homage to eric meyer
+}
+
+.Quote--clear {
+  background: rgb(250.5 255 255); // Allows to declare colors with rgb() level 4
+
+  color: hsl(
+    200grad 100% 50% / 20%
+  ); // This will declare colors with hsl() level 4
+
+  border-color: hwb(90, 0%, 0%, 0.5); // This will transform colors to rgba()
+}
+
+/* After */
+
+blockquote {
+  background: #9d9;
+  background: rgba(153, 221, 153, 0.8);
+
+  border-color: #9d9;
+  border-color: rgba(153, 221, 153, 0.8);
+
+  color: #639;
+}
+
+.Quote--clear {
+  background: rgb(251, 255, 255);
+
+  color: hsla(180, 100%, 50%, 0.2);
+
+  border-color: #80ff00;
+  border-color: rgba(128, 255, 0, 0.5);
+}
+</code></pre>
+<h4 id="page_Color-manipulation">Color manipulation</h4>
+<p>You can change a color by applying modifiers.
+Apart from the ones presented here, there are <a href="https://github.com/postcss/%60postcss-color-function%60#list-of-color-adjuster" class="Link--external">a lot of modifiers</a> available</p>
+<pre><code class="language-css">/* Before */
+
+a {
+  color: color(red alpha(-10%)); // Change the opacity of red
+}
+
+a:hover {
+  color: color(red blackness(80%)); // Darken the color
+}
+
+body {
+  color: hwb(90, 0%, 0%, 0.6); // This will be transformed to rgba
+}
+
+/* After */
+
+a {
+  color: red;
+  color: rgba(255, 0, 0, 0.9);
+}
+
+a:hover {
+  color: #300;
+}
+
+body {
+  color: #80ff00;
+  color: rgba(128, 255, 0, 0.6);
+}
+</code></pre>
+<h4 id="page_Levels-of-gray">Levels of gray</h4>
+<p>You can also get levels of gray.</p>
+<pre><code class="language-css">/* Before */
+
+p {
+  color: gray(85); // Level of gray
+
+  background: gray(10%, 50%); // Level of gray with opacity
+}
+
+/* After */
+
+p {
+  color: #555;
+
+  background: #1a1a1a;
+  background: rgba(26, 26, 26, 0.5);
+}
+</code></pre>
+<h2 id="page_Syntax-simplification">Syntax simplification</h2>
+<h3 id="page_Selectors">Selectors (<code>postcss-selector-matches</code>, <code>postcss-selector-not</code>, <code>postcss-pseudo-class-any-link</code>, <code>postcss-custom-selectors</code>)</h3>
+<p>These plugins help with the creation</p>
+<pre><code class="language-css">/* Before */
+
+@custom-selector :--button button, .button;
+@custom-selector :--enter :hover, :focus;
+
+:--button {
+  /* styles for your buttons */
+}
+:--button:--enter {
+  /* hover/focus styles for your button */
+}
+
+p:not(:first-child, .special) {
+  color: red;
+}
+
+p:matches(:first-child, .special) {
+  color: red;
+}
+
+nav :any-link {
+  background-color: yellow;
+}
+
+[frame=&quot;hsides&quot; i] {
+  border-style: solid none;
+}
+
+/* After */
+
+.button,
+button {
+  /* styles for your buttons */
+}
+
+.button:focus,
+.button:hover,
+button:focus,
+button:hover {
+  /* hover/focus styles for your button */
+}
+
+p:not(:first-child):not(.special) {
+  color: red;
+}
+
+p.special,
+p:first-child {
+  color: red;
+}
+
+nav :link,
+nav :visited {
+  background-color: #ff0;
+}
+
+[frame=&quot;hsides&quot;],
+[frame=&quot;Hsides&quot;],
+[frame=&quot;hSides&quot;],
+[frame=&quot;HSides&quot;],
+[frame=&quot;hsIdes&quot;],
+[frame=&quot;HsIdes&quot;],
+[frame=&quot;hSIdes&quot;],
+[frame=&quot;HSIdes&quot;],
+[frame=&quot;hsiDes&quot;],
+[frame=&quot;HsiDes&quot;],
+[frame=&quot;hSiDes&quot;],
+[frame=&quot;HSiDes&quot;],
+[frame=&quot;hsIDes&quot;],
+[frame=&quot;HsIDes&quot;],
+[frame=&quot;hSIDes&quot;],
+[frame=&quot;HSIDes&quot;],
+[frame=&quot;hsidEs&quot;],
+[frame=&quot;HsidEs&quot;],
+[frame=&quot;hSidEs&quot;],
+[frame=&quot;HSidEs&quot;],
+[frame=&quot;hsIdEs&quot;],
+[frame=&quot;HsIdEs&quot;],
+[frame=&quot;hSIdEs&quot;],
+[frame=&quot;HSIdEs&quot;],
+[frame=&quot;hsiDEs&quot;],
+[frame=&quot;HsiDEs&quot;],
+[frame=&quot;hSiDEs&quot;],
+[frame=&quot;HSiDEs&quot;],
+[frame=&quot;hsIDEs&quot;],
+[frame=&quot;HsIDEs&quot;],
+[frame=&quot;hSIDEs&quot;],
+[frame=&quot;HSIDEs&quot;],
+[frame=&quot;hsideS&quot;],
+[frame=&quot;HsideS&quot;],
+[frame=&quot;hSideS&quot;],
+[frame=&quot;HSideS&quot;],
+[frame=&quot;hsIdeS&quot;],
+[frame=&quot;HsIdeS&quot;],
+[frame=&quot;hSIdeS&quot;],
+[frame=&quot;HSIdeS&quot;],
+[frame=&quot;hsiDeS&quot;],
+[frame=&quot;HsiDeS&quot;],
+[frame=&quot;hSiDeS&quot;],
+[frame=&quot;HSiDeS&quot;],
+[frame=&quot;hsIDeS&quot;],
+[frame=&quot;HsIDeS&quot;],
+[frame=&quot;hSIDeS&quot;],
+[frame=&quot;HSIDeS&quot;],
+[frame=&quot;hsidES&quot;],
+[frame=&quot;HsidES&quot;],
+[frame=&quot;hSidES&quot;],
+[frame=&quot;HSidES&quot;],
+[frame=&quot;hsIdES&quot;],
+[frame=&quot;HsIdES&quot;],
+[frame=&quot;hSIdES&quot;],
+[frame=&quot;HSIdES&quot;],
+[frame=&quot;hsiDES&quot;],
+[frame=&quot;HsiDES&quot;],
+[frame=&quot;hSiDES&quot;],
+[frame=&quot;HSiDES&quot;],
+[frame=&quot;hsIDES&quot;],
+[frame=&quot;HsIDES&quot;],
+[frame=&quot;hSIDES&quot;],
+[frame=&quot;HSIDES&quot;] {
+  border-style: solid none;
+}
+</code></pre>
+<h3 id="page_Media-Queries">Media Queries (<code>postcss-custom-media</code>, <code>postcss-media-minmax</code>)</h3>
+<p>Media queries should be written with <code>min-width</code> and <code>max-width</code> but it leads to unclear declarations.</p>
+<p>With custom media queries, and query ranges, it's much easier to write.</p>
+<pre><code class="language-css">/* Before */
+
+@media (width &gt;= 500px) and (width &lt;= 1200px) {
+  /* your styles */
+}
+
+/* or coupled with custom media queries */
+@custom-media --medium-screen (width &lt; 500px) or (width &gt; 1200px);
+
+@media (--medium-screen) {
+  /* your styles */
+}
+
+/* After */
+
+@media (min-width: 500px) and (max-width: 1200px) {
+  /* your styles */
+}
+
+/* or coupled with custom media queries */
+@media (max-width: 499px) or (min-width: 1201px) {
+  /* your styles */
+}
+</code></pre>
+<h2 id="page_Fallbacks">Fallbacks</h2>
+<p>Browsers have the tendency to do everything their way, either with vendor prefixes or by using a custom syntax no other browser supports. These plugins make it easy for you.</p>
+<h3 id="page_Vendor-Prefixes">Vendor Prefixes (<code>autoprefixer</code>)</h3>
+<p>Tired of having to look for what prefix to use in your CSS ?
+You don't need this anymore!
+With <strong>Autoprefixer</strong> this is all done for you.
+You can write your CSS following the W3C standards and Autoprefixer will handle the rest for you</p>
+<pre><code class="language-css">/* Before */
+
+:fullscreen a {
+  display: flex;
+}
+
+/* After */
+
+:-webkit-full-screen a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+:-moz-full-screen a {
+  display: flex;
+}
+:-ms-fullscreen a {
+  display: -ms-flexbox;
+  display: flex;
+}
+:fullscreen a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+</code></pre>
+<h3 id="page_Browser-support">Browser support (<code>postcss-font-family-system-ui</code>, <code>postcss-pseudoelements</code>, <code>postcss-replace-overflow-wrap</code>, <code>postcss-filter-gradient</code>, <code>postcss-font-variant</code>)</h3>
+<p>Some ways of writing CSS are compatible with modern browsers but not with older ones.
+These plugins ensure some properties include a fallback.</p>
+<p>They are enabled if your target browsers need those fixes.</p>
+<pre><code class="language-css">/* Before */
+
+body {
+  font-family: system-ui;
+}
+
+.button::before {
+  content: attr(href);
+}
+
+.foo {
+  overflow-wrap: break-word;
+}
+
+.buy {
+  background: linear-gradient(to bottom, #1e5799, #7db9e8);
+}
+
+h2 {
+  font-variant-caps: small-caps;
+}
+
+table {
+  font-variant-numeric: lining-nums;
+}
+
+/* After */
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue;
+}
+
+.button:before {
+  content: attr(href);
+}
+
+.foo {
+  word-wrap: break-word;
+}
+
+.buy {
+  background: linear-gradient(to bottom, #1e5799, #7db9e8);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=&quot;#ff1e5799&quot;, endColorstr=&quot;#ff7db9e8&quot;, GradientType=0);
+}
+
+h2 {
+  font-feature-settings: &quot;c2sc&quot;;
+  font-variant-caps: small-caps;
+}
+
+table {
+  font-feature-settings: &quot;lnum&quot;;
+  font-variant-numeric: lining-nums;
+}
+</code></pre>
+    </div>
+
+        <nav>
+        <ul class="Pager">
+            <li class=Pager--prev><a href="../../Packages/crafty-preset-postcss/index.html">Previous</a></li>            <li class=Pager--next><a href="../../Packages/crafty-preset-postcss/CSS_Linting.html">Next</a></li>        </ul>
+    </nav>
+    </article>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-113355094-2', '');
+    ga('send', 'pageview');
+</script>
+
+    <!-- JS -->
+    <script src="../../themes/swissquote/js/jquery-1.11.3.min.js"></script><script src="../../themes/swissquote/js/prismjs.min.js"></script><script src="../../themes/swissquote/js/daux.js"></script>
+            <!-- Tipue Search -->
+        <script type="text/javascript" src="../../tipuesearch/tipuesearch.js"></script>
+
+        <script>
+            window.onunload = function(){}; // force $(document).ready to be called on back/forward navigation in firefox
+            $(function() {
+                tipuesearch({
+                    'base_url': '../../'
+                });
+            });
+        </script>
+    
+</body>
+</html>
