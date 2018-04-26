@@ -52,16 +52,6 @@ describe("tests for no-type-outside-scope", () => {
       })
     ));
 
-  it("Fails on type with compound class", () =>
-    createRuleTester.test(rule, "header.class {}").then(t =>
-      expect(t).toEqual({
-        warnings: 1,
-        column: 1,
-        line: 1,
-        text: rule.messages.rejected
-      })
-    ));
-
   it("Fails on type with compund class, nested", () =>
     createRuleTester.test(rule, "header { &.class {} }").then(t =>
       expect(t).toEqual({
